@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>gitCanvas</title>
+    <!-- stylesheet for gitCanvas -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Mobile-first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!-- AngularJS -->
+    <script type="text/javascript" src="scripts/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/gitCanvas_app.js"></script>
+
+</head>
+<!--
+gitCanvas is designed by Gabriel B. Rondon by using versioning with git in order to build canvas.
+The mainly aims is to learn managers and non-technical entrepreneurs to start use git.
+contact e-mail: grondon@gmail.com
+-->
+<body ng-app="gitCanvasApp">
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+        <!-- Key Partners -->
+        <h4><i class="fa fa-link"></i> Key Partners</h4>
+        <p ng-include="'views/key_partner.html'"></p>
+    </div>
+    <div class="col-sm-2">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Key Activities -->
+                <h4><i class="fa fa-tasks"></i> Key Activities</h4>
+                <p ng-include="'views/key_activities.html'"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Key Resources -->
+                <h4><i class="fa fa-building"></i> Key Resources</h4>
+                <p ng-include="'views/key_resources.html'"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <!-- Value Propositions -->
+        <h4><i class="fa fa-gift"></i> Value Propositions</h4>
+        <p ng-include="'views/value_propositions.html'"></p>
+    </div>
+    <div class="col-sm-2">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Customer Relationship -->
+                <h4><i class="fa fa-heart"></i> Customer Relationship</h4>
+                <p ng-include="'views/customer_relationship.html'"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Channels -->
+                <h4><i class="fa fa-truck"></i> Channels</h4>
+                <p ng-include="'views/channels.html'"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <!-- Customer Segments -->
+        <h4><i class="fa fa-users"></i> Customer Segments</h4>
+        <p ng-include="'views/customer_segments.html'"></p>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+        <!-- Cost Structure -->
+        <h4><i class="fa fa-calculator"></i> Cost Structure</h4>
+        <p ng-include="'views/cost_structure.html'"></p>
+    </div>
+    <div class="col-sm-5">
+        <!--  Revenue Stream -->
+        <h4><i class="fa fa-money"></i> Revenue Streams</h4>
+        <p ng-include="'views/revenue_streams.html'"></p>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+</body>
+</html>
+
+
